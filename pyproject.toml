@@ -1,0 +1,30 @@
+[project]
+name = "redwatch"
+version = "0.1"
+description = "Watches Reddit for posts"
+readme = "README.md"
+authors = [{name = "Gede"}]
+license = {text = "Apache-2.0"}
+requires-python = ">=3.8"
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "click"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/jeedo/redwatch"
+Changelog = "https://github.com/jeedo/redwatch/releases"
+Issues = "https://github.com/jeedo/redwatch/issues"
+CI = "https://github.com/jeedo/redwatch/actions"
+
+[project.scripts]
+redwatch = "redwatch.cli:cli"
+
+[project.optional-dependencies]
+test = ["pytest"]
